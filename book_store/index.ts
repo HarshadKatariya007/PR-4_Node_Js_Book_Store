@@ -46,10 +46,10 @@ book.get("/books/filter", async (req: Request, res: Response) => {
     if (author) {
         filter_data.author = author;
     }
-    else if (title) {
+    if (title) {
         filter_data.title = title;
     }
-    else if (category) {
+    if (category) {
         filter_data.category = category;
     }
 
